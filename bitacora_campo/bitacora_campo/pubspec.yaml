@@ -1,0 +1,29 @@
+name: bitacora_campo
+description: Diario personal / bitácora de campo con fotos, dictado por voz y ubicación GPS.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.3.3            # SQLite local
+  path: ^1.9.0               # armar rutas de archivos/BD
+  path_provider: ^2.1.4      # directorio de documentos de la app
+  image_picker: ^1.1.2       # cámara y galería
+  speech_to_text: ^7.0.0     # dictado por voz
+  geolocator: ^13.0.1        # latitud / longitud
+  url_launcher: ^6.3.0       # abrir Google Maps
+  intl: ^0.19.0              # formato de fechas
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/profile.png
