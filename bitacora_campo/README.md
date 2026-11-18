@@ -72,11 +72,10 @@ bitacora_campo/
 El zip incluye el código (`lib/`), `pubspec.yaml`, los recursos y las pruebas. Las carpetas nativas `android/` e `ios/` las genera Flutter, y un script les aplica los permisos y el `minSdk` necesarios.
 
 ```bash
-# Linux / macOS
-bash setup.sh
-
 # Windows
-setup.bat
+cd bitacora_campo-main
+cd bitacora_campo
+.\setup.bat
 ```
 
 El script hace lo siguiente: respalda `lib/`, `test/` y `pubspec.yaml`, ejecuta `flutter create`, restaura tus archivos, aplica los permisos con `dart tool/configure_platforms.dart` y corre `flutter pub get`. Después conecta un dispositivo y ejecuta `flutter run`.
